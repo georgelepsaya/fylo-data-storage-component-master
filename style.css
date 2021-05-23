@@ -1,0 +1,193 @@
+body {
+    background: url(images/bg-mobile.png) no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(243, 100%, 93%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icn {
+    background-color: hsl(229, 57%, 11%);
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 165px;
+}
+
+.logo {
+    display: block;
+    background: none;
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card1 {
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    border-radius: 10px;
+    border-top-right-radius: 100px 100px;
+    width: 85%;
+}
+
+.card2 {
+    background-color: hsl(228, 56%, 26%);
+    padding: 30px 30px;
+    border-radius: 10px;
+    width: 85%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(21, 33, 80);
+    margin-bottom: 15px;
+    padding: 3px;
+}
+
+.gb {
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 65%;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: -65px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.inner span:last-child {
+    color: hsl(229, 7%, 55%);
+    margin-top: 5px;
+}
+
+.num {
+    color: black;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.grad {
+    padding: 2px;
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.round {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+}
+
+.inner1, .tr {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    body {
+        background: #0c122c url('images/bg-desktop.png') no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+    .inner {
+        display: none;
+    }
+    .container {
+        flex-direction: row;
+        width: 65%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .card1 {
+        width: 38%;
+    }
+    .card2 {
+        width: 58%;
+        margin-top: 0;
+        padding-top: 0px;
+    }
+    .gb {
+        margin-bottom: 0;
+    }
+    .card2 > p {
+        align-self: flex-start;
+    }
+    .inner1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 45%;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: -50px;
+        align-self: flex-end;
+        text-transform: uppercase;
+        border-radius: 10px;
+        font-weight: 700;
+        margin-bottom: -10px;
+        border-bottom-right-radius: 0;
+    }
+    .tr {
+        display: inline;
+        width: 0;
+	    height: 0;
+        margin-top: -2px;
+	    border-left: 30px solid transparent;
+	    border-top: 30px solid white;
+        align-self: flex-end;
+    }
+}
